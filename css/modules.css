@@ -14,22 +14,122 @@ div:nth-child(2) {
   background-color: rgb(164, 198, 255);
   border-style: solid;
   border-width: 1px;
+}
+  
+.small-grids:nth-child(4) {
+  background-color: rgb(138, 181, 255);
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+}
+
+.small-grids:nth-child(5) {
+  background-color: rgb(109, 162, 255);
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+.small-grids:nth-child(6) {
+  background-color: rgb(83, 146, 255);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+}
+
+@media only screen and (min-width: 624px) {
+  nav {
+    background-color: rgb(253, 244, 213);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+
+  div:nth-child(1) {
+    background-color: rgb(252, 238, 189);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
   }
   
-  .small-grids:nth-child(4) {
-    background-color: rgb(138, 181, 255);
+  div:nth-child(2) {
+    background-color: rgb(253, 234, 166);
     border-style: solid;
-    border-width: 1px 1px 1px 0;
+    border-width: 0 1px 1px 0;
+  }
+
+  .small-grids:nth-child(3) {
+    background-color: rgb(255, 231, 144);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+    
+  .small-grids:nth-child(4) {
+    background-color: rgb(253, 222, 109);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
   }
   
   .small-grids:nth-child(5) {
-    background-color: rgb(109, 162, 255);
+    background-color: rgb(255, 218, 82);
     border-style: solid;
-    border-width: 0 1px;
+    border-width: 0 1px 1px 0;
   }
   
   .small-grids:nth-child(6) {
-    background-color: rgb(83, 146, 255);
+    background-color: rgb(255, 210, 47);
     border-style: solid;
-    border-width: 0 1px 0 0;
+    border-width: 0 1px 1px 0;
   }
+
+  footer {
+    background-color: rgb(255, 204, 17);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: rgb(255, 210, 231);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+
+  div:nth-child(1) {
+    background-color: rgb(255, 182, 216);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+  
+  div:nth-child(2) {
+    background-color: rgb(255, 153, 201);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+
+  .small-grids:nth-child(3) {
+    background-color: rgb(255, 128, 187);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+    
+  .small-grids:nth-child(4) {
+    background-color: rgb(255, 104, 175);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+  
+  .small-grids:nth-child(5) {
+    background-color: rgb(255, 79, 161);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+  
+  .small-grids:nth-child(6) {
+    background-color: rgb(255, 56, 149);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+
+  footer {
+    background-color: rgb(255, 31, 136);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+  }
+}
