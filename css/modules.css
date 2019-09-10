@@ -34,7 +34,7 @@ div:nth-child(2) {
   border-width: 0 1px 0 0;
 }
 
-@media only screen and (min-width: 624px) {
+@media only screen and (min-width: 636px) {
   nav {
     background-color: rgb(253, 244, 213);
     border-style: solid;
