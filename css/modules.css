@@ -3,95 +3,103 @@
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  /* margin: auto; */
   text-align: center;
 }
 
-div:nth-child(1) {
-  background-color: rgb(205, 223, 255);
+.c {
+  background-color: rgb(185, 211, 255);
   border-style: solid;
   border-width: 1px;
 }
 
-div:nth-child(2) {
-  background-color: rgb(189, 213, 255);
+.d {
+  background-color: rgb(169, 201, 255);
   border-style: solid;
   border-width: 0 1px;
 }
 
-.small-grids:nth-child(3) {
-  background-color: rgb(164, 198, 255);
+.e {
+  background-color: rgb(138, 181, 255);
   border-style: solid;
   border-width: 1px;
 }
   
-.small-grids:nth-child(4) {
-  background-color: rgb(138, 181, 255);
+.f{
+  background-color: rgb(129, 175, 255);
   border-style: solid;
   border-width: 1px 1px 1px 0;
 }
 
-.small-grids:nth-child(5) {
-  background-color: rgb(109, 162, 255);
+.g {
+  background-color: rgb(86, 148, 253);
   border-style: solid;
   border-width: 0 1px;
 }
 
-.small-grids:nth-child(6) {
-  background-color: rgb(83, 146, 255);
+.h {
+  background-color: rgb(61, 131, 253);
   border-style: solid;
   border-width: 0 1px 0 0;
 }
 
-@media only screen and (min-width: 636px) {
-  nav {
-    background-color: rgb(253, 244, 213);
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
-  }
-
-  div:nth-child(1) {
-    background-color: rgb(252, 238, 189);
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
-  }
-  
-  div:nth-child(2) {
-    background-color: rgb(253, 234, 166);
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-  }
-
-  .small-grids:nth-child(3) {
-    background-color: rgb(255, 231, 144);
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
-  }
-    
-  .small-grids:nth-child(4) {
-    background-color: rgb(253, 222, 109);
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-  }
-  
-  .small-grids:nth-child(5) {
-    background-color: rgb(255, 218, 82);
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-  }
-  
-  .small-grids:nth-child(6) {
-    background-color: rgb(255, 210, 47);
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-  }
-
-  footer {
-    background-color: rgb(255, 204, 17);
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
-  }
+.i {
+  background-color: rgb(31, 113, 255);
+  border-style: solid;
+  border-width: 1px;
 }
+
+/* ========== Tablet Mode ========== */
+
+@media only screen and (min-width: 636px) {
+nav {
+  background-color: rgb(253, 244, 213);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+
+.c {
+  background-color: rgb(252, 238, 189);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+  
+.d {
+  background-color: rgb(253, 235, 170);
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+
+.e {
+  background-color: rgb(252, 229, 147);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+    
+.f {
+  background-color: rgb(255, 226, 119);
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+  
+.g {
+  background-color: rgb(255, 221, 98);
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+
+.h {
+  background-color: rgb(255, 214, 65);
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+
+.i {
+  background-color: rgb(255, 207, 31);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+
+/* ========== Desktop Mode ========== */
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -100,43 +108,43 @@ div:nth-child(2) {
     border-width: 0 1px 1px 1px;
   }
 
-  div:nth-child(1) {
+  .c {
     background-color: rgb(255, 182, 216);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
   
-  div:nth-child(2) {
+  .d {
     background-color: rgb(255, 153, 201);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
 
-  .small-grids:nth-child(3) {
+  .e {
     background-color: rgb(255, 128, 187);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
     
-  .small-grids:nth-child(4) {
+  .f {
     background-color: rgb(255, 104, 175);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
   
-  .small-grids:nth-child(5) {
+  .g {
     background-color: rgb(255, 79, 161);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
   
-  .small-grids:nth-child(6) {
+  .h {
     background-color: rgb(255, 56, 149);
     border-style: solid;
     border-width: 0 1px 1px 0;
   }
 
-  footer {
+  .i {
     background-color: rgb(255, 31, 136);
     border-style: solid;
     border-width: 0 1px 1px 0;
