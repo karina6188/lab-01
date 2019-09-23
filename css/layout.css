@@ -1,126 +1,204 @@
 body {
-  display: inline-block;
-  width: 480px;
+  width: 100%;
+  margin: 5px;
 }
-  
+
+section {
+  display: grid;
+  grid-auto-columns: minmax(120px, auto);
+}
+
 header {
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
   background-color: rgb(235, 242, 255);
   border: 1px solid black;
-  height: 75px;
-  line-height: 75px;
-  width: 480px;
+  line-height: 5em;
 }
 
 nav {
-  background-color: rgb(217, 230, 255);
+  grid-column: 1 / 3;
+  grid-row: 5 / 10;
+  background-color: rgb(206, 223, 253);
   border-style: solid;
   border-width: 0 1px;
-  height: 150px;
-  line-height: 150px;
-  width: 480px;
+  line-height: 10em;
 }
 
-.large-grids {
-  height: 125px;
-  line-height: 125px;
-  width: 480px;
+.c {
+  grid-column: 1 / 3;
+  grid-row: 10 / 18;
+  line-height: 8em;
 }
 
-.small-grids {
-  float: left;
-  height: 250px;
-  line-height: 250px;
-  width: 240px;
+.d {
+  grid-column: 1 / 3;
+  grid-row: 18 / 26;
+  line-height: 8em;
 }
 
-footer {
-  background-color: rgb(9, 98, 252);
-  border: 1px solid black;
-  display: inline-block;
-  height: 80px;
-  line-height: 80px;
-  width: 480px;
+.e {
+  grid-column: 1;
+  grid-row: 26 / 43 ;
+  line-height: 17em;
 }
 
-@media only screen and (min-width: 624px) {
+.f {
+  grid-column: 2;
+  grid-row: 26 / 43 ;
+  line-height: 17em;
+}
+
+.g {
+  grid-column: 1;
+  grid-row: 43 / 60;
+  line-height: 17em;
+}
+
+.h {
+  grid-column: 2;
+  grid-row: 43 / 60;
+  line-height: 17em;
+}
+
+.i {
+  grid-column: 1 / 3;
+  grid-row: 60 / 65;
+  line-height: 5em;
+}
+
+/* ========== Tablet Mode ========== */
+
+@media only screen and (min-width: 636px) {
   body {
-    width: 624px;
-    margin: auto;
+    width: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-auto-columns: minmax(140px, auto);
   }
 
   header {
     background-color: rgb(255, 250, 233);
-    width: 624px;
-    height: 85px;
-    line-height: 85px;
+    width: 100%;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    line-height: 5em;
   }
 
   nav {
-    width: 624px;
-    height: 85px;
-    line-height: 85px;
-    float: left;
+    grid-column: 1 / 5;
+    grid-row: 5;
+    line-height: 10em;
   }
 
-  .large-grids {
-    width: 312px;
-    height: 220px;
-    float: left;
-    line-height: 220px;
+  .c {
+    grid-column: 1 / 3;
+    grid-row: 15;
+    line-height: 20em;
   }
 
-  .small-grids {
-    width: 156px;
-    height: 280px;
-    float: left;
-    line-height: 280px;
+  .d {
+    grid-column: 3 / 5;
+    grid-row: 15;
+    line-height: 20em;
   }
 
-  footer {
-    width: 624px;
-    height: 120px;
-    line-height: 120px;
+  .e {
+    grid-column: 1 / 2;
+    grid-row: 20;
+    line-height: 25em;
+  }
+
+  .f {
+    grid-column: 2 / 3;
+    grid-row: 20;
+    line-height: 25em;
+  }
+
+  .g {
+    grid-column: 3 / 4;
+    grid-row: 20;
+    line-height: 25em;
+  }
+
+  .h {
+    grid-column: 4 / 5;
+    grid-row: 20;
+    line-height: 25em;
+  }
+
+  .i {
+    grid-column: 1 / 5;
+    grid-row: 30;
+    line-height: 8em;
   }
 }
 
+/* ========== Desktop Mode ========== */
 
 @media only screen and (min-width: 767px) {
   body {
-    width: 960px;
-    margin: auto;
+    width: 100%;
+  }
+
+  section {
+    display: grid;
   }
 
   header {
     background-color: rgb(255, 232, 243);
-    width: 960px;
-    height: 100px;
-    line-height: 100px;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    line-height: 7em;
   }
 
   nav {
-    width: 200px;
-    height: 600px;
-    line-height: 600px;
-    float: left;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    line-height: 8em;
   }
 
-  .large-grids {
-    width: 380px;
-    height: 200px;
-    float: left;
-    line-height: 200px;
+  .c {
+    grid-column: 1;
+    grid-row: 2 / 6;
+    line-height: 40em;
   }
 
-  .small-grids {
-    width: 190px;
-    height: 250px;
-    float: left;
-    line-height: 250px;
+  .d {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    line-height: 20em;
+  }
+    
+  .e {
+    grid-column: 4 / 6;
+    grid-row: 3 / 5;
+    line-height: 20em;
   }
 
-  footer {
-    width: 760px;
-    height: 150px;
-    line-height: 150px;
+  .f {
+    grid-column: 2 / 4;
+    grid-row: 5;
+    line-height: 20em;
+  }
+
+  .g {
+    grid-column: 4 / 6;
+    grid-row: 5;
+    line-height: 20em;
+  }
+
+  .h {
+    grid-column: 1 / 2;
+    grid-row: 6;
+    line-height: 12em;
+  }
+
+  .i {
+    grid-column: 2 / 6;
+    grid-row: 6;
+    line-height: 10em;
   }
 }
